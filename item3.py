@@ -91,6 +91,15 @@ def answer():
     print lpsolve('get_variables', lp)[0]
     print lpsolve('get_constraints', lp)[0]
     ret = lpsolve('write_lp', lp, 'item3-output.lp')
+    
+    '''
+    This program print the following:
+    
+    0.0
+    13.0
+    [5.0, 0.0, 0.0, 6.0, 1.0, 1.0, 0.0]      <=== x1 thru x7
+    [13.0, 7.0, 6.0, 11.0, 12.0, 8.0, 8.0]   <=== number fo emp available on each day Mon-Sun
+    '''
 
     
 if __name__ == '__main__':
